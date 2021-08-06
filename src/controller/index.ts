@@ -1,4 +1,9 @@
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-export const c = () => {
-  console.log("1 :>> ", 2);
-};
+import KoaRouter from "koa-router";
+const router = new KoaRouter();
+
+import users from "./users";
+// router.prefix("/api");
+router.get("/api/user-list", users.getList);
+
+// export const controller = router;
+export default router;

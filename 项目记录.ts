@@ -48,7 +48,15 @@
     2.routes------视图路由
       npm i koa-router
       npm i --save-dev @types/koa-router
-
+  4.models--------数据库模型 orm
+    1.npm i sequelize
+    2.npm i  mysql2
+  5.config---------全局配置
+  6.controller-----api 
+  npm install koa-body
+    npm uninstall koa-bodyparser
+    npm uninstall  @types/koa-bodyparser
+    
  */
 
 /**参照
