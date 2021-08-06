@@ -26,6 +26,29 @@
   1.热更新 nodemon
     npm install --save-dev nodemon
     nodemon.json
+  2.koa-logger
+    npm i koa-logger
+    npm i --save-dev @types/koa-logger
+  3.npm i koa-onerror
+    tsconfig.json root
+3.基础架构
+  1.start.ts------开发启动文件
+    npm install debug
+    npm i --save-dev @types/debug
+  2.app.ts--------程序入口
+    npm i koa
+    npm i --save-dev @types/koa
+  3.view
+    1.views-------视图 页面
+      npm i koa-views
+      npm i --save-dev @types/koa-views
+      npm i pug
+      npm i koa-static
+      npm i --save-dev @types/koa-static
+    2.routes------视图路由
+      npm i koa-router
+      npm i --save-dev @types/koa-router
+
  */
 
 /**参照
