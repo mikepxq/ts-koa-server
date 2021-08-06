@@ -1,0 +1,38 @@
+{
+  "name": "ts-koa-server",
+  "version": "1.0.0",
+  "description": "typescript node koa2 sequelize",
+  "main": "src/start.ts",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/tsc --watch ",
+    "lint-fix": "eslint --fix --ext  .ts,tsx,js src",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikepxq/ts-koa-server.git"
+  },
+  "author": "mikepxq",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikepxq/ts-koa-server/issues"
+  },
+  "homepage": "https://github.com/mikepxq/ts-koa-server#readme",
+  "lint-staged": {
+    "*.{js,tsx,ts}": "eslint --cache --fix"
+  }
+}
