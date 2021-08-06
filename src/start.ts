@@ -1,2 +1,3 @@
-import { c } from "./controller";
+require("module-alias/register");
+import { c } from "@/controller";
 c();

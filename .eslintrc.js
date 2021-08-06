@@ -12,5 +12,6 @@ module.exports = {
   plugins: ["@typescript-eslint", "prettier"],
   rules: {
     "prettier/prettier": ["warn", prettier], //同步规则
+    "@typescript-eslint/explicit-module-boundary-types": "off", //函数没有返回类型
   },
 };
