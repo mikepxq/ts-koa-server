@@ -1,7 +1,7 @@
 {
   "name": "ts-koa-server",
   "version": "1.0.0",
-  "description": "typescript node koa2 sequelize",
+  "description": "typescript node koa2 sequelize mysql",
   "main": "src/start.ts",
   "dependencies": {
     "debug": "^4.3.2",
