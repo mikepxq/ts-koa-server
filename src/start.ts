@@ -5,7 +5,7 @@ import debug from "debug";
 const _debug = debug("http");
 const server: http.Server = http.createServer(app.callback());
 
-const port = normalizePort(process.env.PORT || "3000");
+const port = normalizePort(process.env.PORT || "6000");
 server.listen(port);
 server.on("error", onError);
 server.on("listening", onListening);

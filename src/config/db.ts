@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
 // 方法 2: 分别传递参数 (其它数据库)
-const sequelize = new Sequelize("demo-koa", "root", "root852123", {
+const sequelize = new Sequelize("demo_koa", "root", "root", {
   host: "localhost",
   dialect: "mysql" /* 选择 'mysql' | 'mariadb' | 'postgres' | 'mssql' 其一 */,
 });

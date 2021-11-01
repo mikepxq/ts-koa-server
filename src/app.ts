@@ -18,6 +18,7 @@ app.use(views(__dirname + "/views", { extension: "pug" }));
 
 app.use(routes.routes());
 app.use(routes.allowedMethods()); //405;
+
 app.use(controller.routes());
 app.use(controller.allowedMethods()); //405;
 
