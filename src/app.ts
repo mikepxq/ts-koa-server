@@ -5,7 +5,7 @@ import koaLogger from "koa-logger";
 import onerror from "koa-onerror";
 import koaBody from "koa-body";
 
-import routes from "@/routes";
+import router from "@/router";
 import controller from "@/controller";
 
 const app = new koa();
@@ -16,8 +16,8 @@ app.use(koaBody());
 app.use(koaStatic(__dirname + "/public"));
 app.use(views(__dirname + "/views", { extension: "pug" }));
 
-app.use(routes.routes());
-app.use(routes.allowedMethods()); //405;
+app.use(router.routes());
+app.use(router.allowedMethods()); //405;
 
 app.use(controller.routes());
 app.use(controller.allowedMethods()); //405;

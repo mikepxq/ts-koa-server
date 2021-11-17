@@ -1,7 +1,6 @@
 import models from "@/models";
-import { Middleware } from "koa";
 
-const getList = async (ctx: any) => {
+export const getList = async (ctx: Koa.ParameterizedContext) => {
   console.log({ ...ctx.query }); // 获取的是对象 结构代理
   // console.log(ctx.querystring); // 获取的是一个字符串
   // console.log(ctx.url); // 获取url地址
@@ -13,8 +12,4 @@ const getList = async (ctx: any) => {
       list,
     },
   };
-};
-
-export default {
-  getList,
 };
